@@ -13,6 +13,9 @@
 		633F8260265957D000098E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633F825E265957D000098E37 /* Main.storyboard */; };
 		633F8262265957D200098E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633F8261265957D200098E37 /* Assets.xcassets */; };
 		633F8265265957D200098E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633F8263265957D200098E37 /* LaunchScreen.storyboard */; };
+		633F826E26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */; };
+		633F82702659639C00098E37 /* InstagramLikeCardAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */; };
+		633F82722659686800098E37 /* InstagramCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F82712659686800098E37 /* InstagramCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		633F8261265957D200098E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633F8264265957D200098E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		633F8266265957D200098E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLikeCardTransitionDelegate.swift; sourceTree = "<group>"; };
+		633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLikeCardAnimationController.swift; sourceTree = "<group>"; };
+		633F82712659686800098E37 /* InstagramCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		633F8257265957D000098E37 /* Instagram-Like-Card-Transition */ = {
 			isa = PBXGroup;
 			children = (
+				633F826C26595D4F00098E37 /* Instagram Like Transition */,
 				633F8258265957D000098E37 /* AppDelegate.swift */,
 				633F825A265957D000098E37 /* SceneDelegate.swift */,
 				633F825C265957D000098E37 /* ViewController.swift */,
+				633F82712659686800098E37 /* InstagramCardViewController.swift */,
 				633F825E265957D000098E37 /* Main.storyboard */,
 				633F8261265957D200098E37 /* Assets.xcassets */,
 				633F8263265957D200098E37 /* LaunchScreen.storyboard */,
 				633F8266265957D200098E37 /* Info.plist */,
 			);
 			path = "Instagram-Like-Card-Transition";
+			sourceTree = "<group>";
+		};
+		633F826C26595D4F00098E37 /* Instagram Like Transition */ = {
+			isa = PBXGroup;
+			children = (
+				633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */,
+				633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */,
+			);
+			path = "Instagram Like Transition";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633F82702659639C00098E37 /* InstagramLikeCardAnimationController.swift in Sources */,
 				633F825D265957D000098E37 /* ViewController.swift in Sources */,
 				633F8259265957D000098E37 /* AppDelegate.swift in Sources */,
+				633F82722659686800098E37 /* InstagramCardViewController.swift in Sources */,
 				633F825B265957D000098E37 /* SceneDelegate.swift in Sources */,
+				633F826E26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

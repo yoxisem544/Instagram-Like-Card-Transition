@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func presentationButtonClicked(_ sender: Any) {
+        let instagramCard = InstagramCardViewController()
+        present(instagramCard, animated: true, completion: nil)
+    }
 
 }
 
