@@ -33,6 +33,11 @@ class InstagramCardViewController: UIViewController {
         seperatorLine.translatesAutoresizingMaskIntoConstraints = false
         seperatorLine.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
 
+        view.addSubview(dismissButton)
+        dismissButton.translatesAutoresizingMaskIntoConstraints = false
+        dismissButton.setTitle("Dismiss", for: .normal)
+        dismissButton.addTarget(self, action: #selector(dismissButtonClicked), for: .touchUpInside)
+
         NSLayoutConstraint.activate([
             topScrollIndicatorBar.widthAnchor.constraint(equalToConstant: 48),
             topScrollIndicatorBar.heightAnchor.constraint(equalToConstant: 5),
@@ -46,12 +51,19 @@ class InstagramCardViewController: UIViewController {
             seperatorLine.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
             seperatorLine.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             seperatorLine.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            seperatorLine.heightAnchor.constraint(equalToConstant: 0.5)
+            seperatorLine.heightAnchor.constraint(equalToConstant: 0.5),
+
+            dismissButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            dismissButton.topAnchor.constraint(equalTo: seperatorLine.bottomAnchor, constant: 40)
         ])
     }
 
     private func setupUI() {
 
+    }
+
+    @objc private func dismissButtonClicked() {
+        presentingViewController?.dismiss(animated: true, completion: nil)
     }
 
 }

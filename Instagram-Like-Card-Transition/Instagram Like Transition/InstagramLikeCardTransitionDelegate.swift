@@ -10,10 +10,10 @@ import UIKit
 final class InstagramLikeCardTransitionDelegate: NSObject, UIViewControllerTransitioningDelegate {
 
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        nil
+        InstagramLikeCardAnimationController(type: .presentation)
     }
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        nil
+        InstagramLikeCardAnimationController(type: .dismissal)
     }
 }
