@@ -16,6 +16,7 @@
 		633F826E26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */; };
 		633F82702659639C00098E37 /* InstagramLikeCardAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */; };
 		633F82722659686800098E37 /* InstagramCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F82712659686800098E37 /* InstagramCardViewController.swift */; };
+		633F8274265A468B00098E37 /* InstagramLikeCardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F8273265A468B00098E37 /* InstagramLikeCardPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLikeCardTransitionDelegate.swift; sourceTree = "<group>"; };
 		633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLikeCardAnimationController.swift; sourceTree = "<group>"; };
 		633F82712659686800098E37 /* InstagramCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCardViewController.swift; sourceTree = "<group>"; };
+		633F8273265A468B00098E37 /* InstagramLikeCardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLikeCardPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				633F826D26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift */,
 				633F826F2659639C00098E37 /* InstagramLikeCardAnimationController.swift */,
+				633F8273265A468B00098E37 /* InstagramLikeCardPresentationController.swift */,
 			);
 			path = "Instagram Like Transition";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				633F825D265957D000098E37 /* ViewController.swift in Sources */,
 				633F8259265957D000098E37 /* AppDelegate.swift in Sources */,
 				633F82722659686800098E37 /* InstagramCardViewController.swift in Sources */,
+				633F8274265A468B00098E37 /* InstagramLikeCardPresentationController.swift in Sources */,
 				633F825B265957D000098E37 /* SceneDelegate.swift in Sources */,
 				633F826E26595D6500098E37 /* InstagramLikeCardTransitionDelegate.swift in Sources */,
 			);

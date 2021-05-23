@@ -16,4 +16,8 @@ final class InstagramLikeCardTransitionDelegate: NSObject, UIViewControllerTrans
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         InstagramLikeCardAnimationController(type: .dismissal)
     }
+
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        InstagramLikeCardPresentationController(presentedViewController: presented, presenting: presenting)
+    }
 }

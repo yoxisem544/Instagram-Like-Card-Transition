@@ -18,6 +18,9 @@ class InstagramCardViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
+        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        view.layer.cornerCurve = .continuous
+        view.layer.cornerRadius = 20
 
         view.addSubview(topScrollIndicatorBar)
         topScrollIndicatorBar.translatesAutoresizingMaskIntoConstraints = false
